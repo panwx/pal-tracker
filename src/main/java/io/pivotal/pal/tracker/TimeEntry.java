@@ -1,9 +1,10 @@
 package io.pivotal.pal.tracker;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class TimeEntry {
+public class TimeEntry implements Serializable {
     private long id;
     private long projectId;
     private long userId;
